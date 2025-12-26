@@ -8,7 +8,16 @@ const cors = require("cors");
 const port = process.env.PORT || 4000;
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      https://full-stack-frontend-1gch.onrender.com/,
+      https://full-stack-admin-y7iy.onrender.com/
+    ],
+    credentials: true
+  })
+);
+
 
 /* =======================
   DATABASE CONNECTION
