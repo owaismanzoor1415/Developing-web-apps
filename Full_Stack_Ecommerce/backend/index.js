@@ -11,8 +11,6 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      https://full-stack-frontend-1gch.onrender.com/,
-      https://full-stack-admin-y7iy.onrender.com/
     ],
     credentials: true
   })
